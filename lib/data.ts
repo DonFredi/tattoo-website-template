@@ -12,7 +12,7 @@ export const colors = {
 // ─── Site data ────────────────────────────────────────────────────────────────
 export const SITE = {
   name: "Nova Ink",
-  tagline: "Fine line and illustrative tattoo studio. London, by appointment.",
+  tagline: "Fine line and illustrative tattoo studio. Nairobi, by appointment.",
   artist: "Elara Nova",
   location: "Studio 14, Kimathi St, Nairobi City",
   email: "hello@novaink.studio",
