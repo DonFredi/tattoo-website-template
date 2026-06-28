@@ -134,31 +134,31 @@ export const GALLERY_ITEMS = [
     title: "Sacred Geometry",
     tag: "Geometric · Blackwork",
     layout: "mid-center",
-    image: "/images/fine_line_botanical.jpg",
+    image: "/images/geometric_blackwork.jpg",
   },
   {
     title: "The Moth Study",
     tag: "Illustrative · Fine Line",
     layout: "square-right",
-    image: "/images/fine_line_botanical.jpg",
+    image: "/images/illustrative_fineline.jpg",
   },
   {
     title: "Compass Rose",
     tag: "Minimalist · Blackwork",
     layout: "square-left",
-    image: "/images/fine_line_botanical.jpg",
+    image: "/images/minimalist.jpg",
   },
   {
     title: "Wave Study III",
     tag: "Fine Line · Abstract",
     layout: "wide-center",
-    image: "/images/fine_line_botanical.jpg",
+    image: "/images/fine_line_abstract.jpg",
   },
   {
     title: "The Heart, Exposed",
     tag: "Illustrative · Anatomical",
     layout: "tall-right",
-    image: "/images/fine_line_botanical.jpg",
+    image: "/images/illustrative_atomical.jpg",
   },
 ] as const;
 
