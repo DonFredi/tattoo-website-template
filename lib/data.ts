@@ -14,7 +14,7 @@ export const SITE = {
   name: "Nova Ink",
   tagline: "Fine line and illustrative tattoo studio. London, by appointment.",
   artist: "Elara Nova",
-  location: "Studio 14, Redchurch St, Shoreditch, London E2",
+  location: "Studio 14, Kimathi St, Nairobi City",
   email: "hello@novaink.studio",
   waitTime: "6–8 weeks",
   instagram: "https://instagram.com/novaink",
@@ -34,7 +34,7 @@ export const SERVICES = [
     name: "Fine Line & Botanical",
     description:
       "Delicate, high-precision work rendered in single-needle or fine groupings. Florals, botanicals, landscapes at a smaller scale — things that whisper rather than shout.",
-    price: "From £200",
+    price: "From Kshs 5000",
     priceSub: "Half-day sessions · 3–4 hours",
   },
   {
@@ -42,7 +42,7 @@ export const SERVICES = [
     name: "Geometric & Blackwork",
     description:
       "Architectural precision meets organic intuition. Sacred geometry, mandala-derived forms, and high-contrast blackwork for clients who want presence and permanence.",
-    price: "From £350",
+    price: "From Kshs 7500",
     priceSub: "Full-day sessions · 6–8 hours",
   },
   {
@@ -50,7 +50,7 @@ export const SERVICES = [
     name: "Large-Scale Illustrative",
     description:
       "Full sleeves, back pieces, and statement bodywork. Long-term collaboration to develop a coherent, personal visual language across multiple sessions.",
-    price: "From £600 / session",
+    price: "From Kshs 10000 / session",
     priceSub: "Multi-session projects · Custom quote",
   },
 ] as const;
