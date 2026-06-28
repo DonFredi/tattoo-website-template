@@ -1,21 +1,22 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import { motion } from 'framer-motion'
-import { Eyebrow }    from '@/components/ui/Eyebrow'
-import { GalleryArt } from '@/components/ui/TattooArt'
-import { GALLERY_ITEMS } from '@/lib/data'
-import { stagger, staggerChild, fadeUp, viewport } from '@/lib/motion'
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { Eyebrow } from "@/components/ui/Eyebrow";
+import { GalleryArt } from "@/components/ui/TattooArt";
+import { GALLERY_ITEMS } from "@/lib/data";
+import { stagger, staggerChild, fadeUp, viewport } from "@/lib/motion";
+import Image from "next/image";
 
 // Grid column/row assignments for the 6 gallery pieces
 const GRID_SPANS = [
-  'md:col-span-5 aspect-[3/4]',
-  'md:col-span-3 aspect-[2/3]',
-  'md:col-span-4 aspect-square',
-  'md:col-span-3 aspect-square',
-  'md:col-span-5 aspect-[16/9]',
-  'md:col-span-4 aspect-[3/4]',
-]
+  "md:col-span-5 aspect-[3/4]",
+  "md:col-span-3 aspect-[2/3]",
+  "md:col-span-4 aspect-square",
+  "md:col-span-3 aspect-square",
+  "md:col-span-5 aspect-[16/9]",
+  "md:col-span-4 aspect-[3/4]",
+];
 
 export function GallerySection() {
   return (
@@ -40,10 +41,20 @@ export function GallerySection() {
           className="inline-flex items-center gap-3 font-sans text-2xs uppercase tracking-[0.2em] text-ash hover:text-gold transition-colors duration-300 group flex-shrink-0"
         >
           Commission a piece
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-               className="transition-transform duration-300 group-hover:translate-x-1">
-            <path d="M3 9h12M11 5l4 4-4 4" stroke="currentColor" strokeWidth="1.2"
-                  strokeLinecap="round" strokeLinejoin="round" />
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            className="transition-transform duration-300 group-hover:translate-x-1"
+          >
+            <path
+              d="M3 9h12M11 5l4 4-4 4"
+              stroke="currentColor"
+              strokeWidth="1.2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
           </svg>
         </Link>
       </motion.div>
@@ -64,20 +75,20 @@ export function GallerySection() {
           >
             {/* Art */}
             <div className="absolute inset-0">
-              <GalleryArt index={i} />
+              <Image src={item.image} alt={item.title} fill className="object-cover" />
             </div>
 
             {/* Gold shimmer on hover */}
             <div className="absolute inset-0 bg-gold/0 group-hover:bg-gold/[0.06] transition-colors duration-500" />
 
             {/* Hover overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-void/80 via-transparent to-transparent
+            <div
+              className="absolute inset-0 bg-gradient-to-t from-void/80 via-transparent to-transparent
                             opacity-0 group-hover:opacity-100 transition-opacity duration-400
-                            flex items-end p-6">
+                            flex items-end p-6"
+            >
               <div>
-                <p className="font-display text-[18px] font-light italic text-bone">
-                  {item.title}
-                </p>
+                <p className="font-display text-[18px] font-light italic text-bone">{item.title}</p>
                 <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-gold block mt-1">
                   {item.tag}
                 </span>
@@ -87,5 +98,5 @@ export function GallerySection() {
         ))}
       </motion.div>
     </section>
-  )
+  );
 }
