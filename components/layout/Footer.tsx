@@ -99,7 +99,7 @@ export function Footer() {
         <p className="font-sans text-[11px] text-ash/40 tracking-[0.1em]">
           © {new Date().getFullYear()} Nova Ink Studio · All rights reserved
         </p>
-        <p className="font-sans text-[11px] text-ash/40 tracking-[0.1em]">Designed with intention</p>
+        <p className="font-sans text-[11px] text-ash/40 tracking-[0.1em]">Developed by ScriptTagg</p>
       </div>
     </footer>
   );
